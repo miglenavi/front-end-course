@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Jūsų informacija</legend>
+      <table>
+        <tr>
+          <td>Vardas:</td>
+          <td><input type="text" name="name" value=""><br></td>
+        </tr>
+        <tr>
+          <td>Pavardė:</td>
+          <td><input type="text" name="name" value=""><br></td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset>
+      <legend>Klausimai</legend>
+      Kaip sužinojote apie mus?
+      <select name="infosource">
+        <option value="Google">Google</option>
+        <option value="Draugai">Draugai</option>
+        <option value="Kolegos">Kolegos</option>
+        <option value="Kitas">Kitas</option>
+      </select><br><br>
+      Ar apsilankysite vėl?
+      Taip:<input type="radio" name="visit" value=yes>
+      Ne:<input type="radio" name="visit" value=no>
+      Galbūt:<input type="radio" name="visit" value=maybe><br><br>
+      Ką manote apie kursą?<br>
+      <textarea name="message" rows="10" cols="30" placeholder="Rašykite viską ką galvojate"></textarea><br><br>
+      Pažymėkite programavimo/žymejimo kalbas su kuriomis esate susipažinę:<br>
+      <table>
+        <tr>
+          <td><input type="checkbox" name="languages" value="C#">C#</td>
+          <td><input type="checkbox" name="languages" value="JAVA">JAVA</td>
+          <td><input type="checkbox" name="languages" value="PHP">PHP</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="languages" value="HTML">HTML</td>
+          <td><input type="checkbox" name="languages" value="CSS">CSS</td>
+          <td><input type="checkbox" name="languages" value="Javascript">Javascript</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="languages" value="Python">Python</td>
+          <td><input type="checkbox" name="languages" value="Ruby">Ruby</td>
+        </tr>
+      </table>
+        <br><br>
+        <input type="submit" name="send" value="Siųsti">
+  </fieldset>
+
+
+  </body>
+</html>
