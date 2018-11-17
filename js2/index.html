@@ -6,17 +6,16 @@
   </head>
   <body>
     <script type="text/javascript">
-      var x = 5;
-      var y = 2;
-      var z = 5/2
-      division(5,2)
+      var number1 = prompt('Type a number','')
+      var number2 = prompt('Type another number', '')
+      var number3 = divisionOfTwoNumbers(number1, number2);
 
+      console.log(number3);
+      alert(number3)
 
-      function division(a,b){
-        console.log(Number(a)/Number(b));
-        }
-
-      alert(z)
+      function divisionOfTwoNumbers(a,b){
+        return number1/number2;
+      }
 
     </script>
   </body>
