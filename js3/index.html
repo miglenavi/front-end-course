@@ -7,18 +7,14 @@
   <body>
     <script type="text/javascript">
 
+      var number1 = prompt('Type a number','')
+      var number2 = prompt('Type another number', '')
+      divisionOfTwoNumbers(number1, number2);
 
-      var number1 = prompt('First number','');
-      var number2 = prompt('Second number', '')
-      var z = number1/number2
-      console.log(division(number1, number2,))
-        alert(z)
-        
-      function division(number1,number2){
-       return number1 + "/" + number2;
-        }
-
-
+      function divisionOfTwoNumbers(a,b){
+      var result = Number(a) / Number(b)
+      alert(result)
+      }
     </script>
   </body>
 </html>
