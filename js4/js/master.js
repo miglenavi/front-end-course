@@ -1,6 +1,3 @@
-
-var age = prompt('What is your age?','');
-
 function ageCheck(number){
   if(isNaN(number)){
    document.write("Please write a number");
