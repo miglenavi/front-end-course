@@ -6,16 +6,11 @@
   </head>
   <body>
     <script type="text/javascript">
-    evenNumbers(1);
-
-    function evenNumbers(number){
-      while (number<=100){
-        number=number+1
-        if (number % 2 == 0){
-          console.log(number);
-        }
-      }
+    var str = "";
+    for (var i = 2; i < 100; i=i+2) {
+      str = str + i + "\n";
     }
-   </script>
+    console.log(str);
+  </script>
  </body>
 </html>
