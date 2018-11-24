@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style media="screen">
+  #logo{
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .nav-wrapper{
+    background-color: white;
+  }
+  /*form{
+    background-color: rgb(0,191,165, 0.3);
+  }*/
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo"><img id="logo" src="images/logo.png" alt="logo"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contacts.html" class="waves-effect waves-light btn"><i class="material-icons right">star_border</i>Hired</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">About</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contacts.html">Hire here</a></li>
+  </ul>
+
+<!--   Contact Section   -->
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s6 center">
+            <h3><i class="mdi-content-send brown-text"></i></h3>
+            <h4>Contact details</h4>
+            <p class="left-align light"> <address>
+              Email <a href="mailto:mig.navickaite@gmail.com">Migle Navickaite</a>.<br>
+              Or can always visit here: Sodų g. 3, Vilnius 01313<br>
+              If you are shy, leave your details bellow and I will contact you personally :)
+              </address></p>
+
+              <div class="row">
+                <form class="col s12">
+                  <div class="row z-depth-3">
+                    <div class="input-field col s6">
+                      <form>
+                      <i class="material-icons prefix">account_circle</i>
+                      <input id="icon_prefix" type="text" class="validate">
+                      <label for="icon_prefix">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix">email</i>
+                      <input id="icon_email" type="tel" class="validate">
+                      <label for="email">Email Address</label>
+                      <button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col s6 center">
+            <h3><i class="mdi-content-send brown-text"></i></h3>
+            <h4></h4>
+            <p class="left-align light"><iframe class="z-depth-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2307.0314368925506!2d25.282220315769237!3d54.67387498027865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd946a81a3e8b1%3A0x3c1f79f8e7b89cb4!2sCoffice+Vilnius!5e0!3m2!1slt!2slt!4v1542993457368" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Website about Migle Navickaite</h5>
+          <p class="grey-text text-lighten-4">Part of the project for Vilnius School of Coding, Front-End course.</p>
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/materialize.js"></script>
+      <script src="js/init.js"></script>
+      <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+      $(document).ready(function(){
+       $('.sidenav').sidenav();
+     });
+     </script>
+
+  </body>
+</html>

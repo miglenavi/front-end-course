@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style media="screen">
+  .image{
+    width: 100%;
+  }
+  #logo{
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .nav-wrapper{
+    background-color: white;
+  }
+  a{
+    color: rgb(0,191,165);
+  }
+  .icon-block{
+    background-color: rgb(0,191,165, 0.3);
+    padding: 20px;
+  }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo"><img id="logo" src="images/logo.png" alt="logo"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contacts.html" class="waves-effect waves-light btn"><i class="material-icons right">star_border</i>Hired</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">About</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contacts.html">Hire here</a></li>
+  </ul>
+
+  <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+ <div class="row">
+   <h2 class="center">My work</h2>
+ </div>
+
+ <div class="row"> <a href="#"></a>
+   <div class="col s12 m4">
+     <div class="icon-block z-depth-3">
+       <h2 class="center brown-text"><a href="https://www.15min.lt/">15min</a></h2>
+       <h5 class="center">November,2018</h5>
+       <a href="https://www.15min.lt/"><img id="img1" class="image" src="images/15min.gif" alt="15min.lt"></a>
+     </div>
+   </div>
+
+   <div class="col s12 m4">
+     <div class="icon-block z-depth-3">
+       <h2 class="center brown-text"><a href="https://www.delfi.lt/">Delfi</a></h2>
+       <h5 class="center">August,2018</h5>
+       <a href="https://www.delfi.lt/"><img id="img1" class="image" src="images/delfi.gif" alt="15min.lt"></a>
+     </div>
+   </div>
+
+   <div class="col s12 m4">
+     <div class="icon-block z-depth-3">
+       <h2 class="center brown-text"><a href="https://www.panele.lt/lt">Panelė</a></h2>
+       <h5 class="center">May,2018</h5>
+       <a href="https://www.panele.lt/lt"><img id="img1" class="image" src="images/panele.gif" alt="15min.lt"></a>
+     </div>
+   </div>
+ </div>
+
+ <div class="row">
+   <div class="col s12 m4">
+     <div class="icon-block z-depth-3">
+       <h2 class="center brown-text"><a href="https://www.vinted.lt/">Vinted</a></h2>
+       <h5 class="center">December,201ų</h5>
+       <a href="https://www.vinted.lt/"><img id="img1" class="image" src="images/vinted.gif" alt="15min.lt"></a>
+     </div>
+   </div>
+
+   <div class="col s12 m4">
+     <div class="icon-block z-depth-3">
+       <h2 class="center brown-text"><a href="http://www.forumcinemas.lt/">ForumCinemas</a></h2>
+       <h5 class="center">November,2018</h5>
+       <a href="http://www.forumcinemas.lt/"><img id="img1" class="image" src="images/fc.gif" alt="15min.lt"></a>
+     </div>
+   </div>
+
+   <div class="col s12 m4">
+     <div class="icon-block z-depth-3">
+       <h2 class="center brown-text"><a href="https://www.mailerlite.com/">MailerLite</a></h2>
+       <h5 class="center">June,2017</h5>
+       <a href="https://www.mailerlite.com/"><img id="img1" class="image" src="images/mailerlite.gif" alt="15min.lt"></a>
+     </div>
+   </div>
+ </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Website about Migle Navickaite</h5>
+          <p class="grey-text text-lighten-4">Part of the project for Vilnius School of Coding, Front-End course.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text"></h5>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+        $(document).ready(function(){
+         $('.sidenav').sidenav();
+       });
+       setTimeout(function() {
+          setInterval(function() {
+              $('.image').attr('src',$('.image').attr('src'))
+          },1)
+      }, 7000)
+   </script>
+
+  </body>
+</html>
