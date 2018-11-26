@@ -142,38 +142,17 @@
         $(document).ready(function(){
          $('.sidenav').sidenav();
        });
-       setTimeout(function() {
-          setInterval(function() {
-              $('#img1').attr('src',$('#img1').attr('src'))
-          },1)
-       }, 7000)
-       setTimeout(function() {
-          setInterval(function() {
-              $('#img2').attr('src',$('#img2').attr('src'))
-          },1)
-       }, 7000)
-        setTimeout(function() {
-           setInterval(function() {
-               $('#img3').attr('src',$('#img3').attr('src'))
-           },1)
-       }, 7000)
-       setTimeout(function() {
-          setInterval(function() {
-              $('#img4').attr('src',$('#img4').attr('src'))
-          },1)
-       }, 7000)
-
-      setTimeout(function() {
-         setInterval(function() {
-            $('#img5').attr('src',$('#img5').attr('src'))
-          },1)
-         }, 7000)
-
-      setTimeout(function() {
-          setInterval(function() {
-          $('#img6').attr('src',$('#img6').attr('src'))
-         },1)
-        }, 7000)
+       setTimeout(function () {
+         for (var i = 1; i <= 6; i++) {
+           stopGif('#img' + i)
+         }
+       }, 7000);
+       function stopGif(imgId) {
+         var img = $(imgId);
+         setInterval(function () {
+           img.attr('src', img.attr('src'));
+         }, 1);
+       }
    </script>
   </body>
 </html>
