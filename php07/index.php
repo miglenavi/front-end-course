@@ -20,8 +20,8 @@ $cities4 =['Tokijas', 'Vašingtonas', 'Maskva', 'Londonas'];
      </ul>
      <!--The forth task -->
      <ul>
-       <?php foreach ($cities4 as $cities4){
-         echo "<li>$cities4</li>";
+       <?php foreach ($cities4 as $city) {
+         echo "<li>$city</li>";
        } ?>
      </ul>
    </body>
