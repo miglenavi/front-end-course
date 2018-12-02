@@ -6,7 +6,6 @@ print_r($cities);
 //The forth task
 $cities[] = 'Tokijas';
 //The fifth task
-$cities2 =['Tokijas','Vasingtonas', 'Maskva'];
 $cities2 =[
   'Tokijas' => 13.6,
   'Vasingtonas' => 0.6,
@@ -29,7 +28,7 @@ $cities2['Londonas'] = 8.6;
      </ul>
      <!-- The seventh task  -->
      <ul>
-       <li><?php echo "Gyventojų skaičius: $cities2[Tokijas] mln."; ?></li>
+       <li><?php echo "Gyventojų skaičius: {$cities2['Tokijas']} mln."; ?></li>
      </ul>
 
    </body>
