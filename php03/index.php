@@ -1,7 +1,7 @@
 <?php
 $x = 10;
 $y = 7;
-$z = $x + $y
+$z = $x + $y;
  ?>
 
 <!DOCTYPE html>
