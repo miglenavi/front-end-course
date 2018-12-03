@@ -10,7 +10,7 @@ echo "<br>";
 echo "<br>";
 
 //`the third one`--- numbers cannot repeat
-asort($april);
+rsort($april);
 $arranged=array_unique($april);
 
 $warm = count($arranged);
@@ -29,5 +29,4 @@ for($x = 0; $x < 5; $x++) {
     echo $lowTemp[$x];
     echo "<br>";
 }
-
  ?>
