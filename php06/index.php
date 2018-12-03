@@ -11,7 +11,7 @@ $cities3['Londonas'] = [8.6, 43, 'Anglija'];
   if ($metai >= $cities3['Vašingtonas'][1]) {
     echo "Vašingtonas yra {$cities3['Vašingtonas'][2]} sostinė";
 //The fourth and fifth
-  } elseif ($metai = 1774) {
+} elseif ($metai == 1774) {
     echo "{$cities3['Vašingtonas'][2]} sostinė vis dar Filadelfijoje.";
   } else {
     $answer = $cities3['Vašingtonas'][1] - $metai;
